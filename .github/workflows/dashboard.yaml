@@ -34,7 +34,7 @@ jobs:
       #     python app.py
 
       - name: Execute OSCAL Assessment Plan
-        uses: ./actions/oscal-assessment-plan-execute
+        uses: .github/actions/oscal-assessment-plan-execute
         with:
           who-to-greet: 'OSCAL Implementor'
 
