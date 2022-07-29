@@ -12,9 +12,12 @@ model = os.environ['ASSESSMENT_PLAN']
 
 def test_the_load():
     """Load a model for interpretation"""
-    model_file = Path(os.environ['ASSESSMENT_PLAN']).read_text()
-    model = yaml.safe_load(model_file)
+    content = Path(model).read_text()
+    plan = yaml.safe_load(content)
+
+    print("*"*100)
     print(model)
+    print(plan)
 
 
 def test_to_pass():
