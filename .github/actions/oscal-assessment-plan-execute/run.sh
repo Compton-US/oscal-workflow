@@ -3,7 +3,7 @@
 # chmod +x run.sh
 
 model_file=$1
-echo "::set-output name=model::$model_file"
+echo "::set-output name=model_file::$model_file"
 
 model=$(cat ${1})
 echo "::set-output name=model::$model"
