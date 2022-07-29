@@ -40,4 +40,6 @@ jobs:
           who-to-greet: 'OSCAL Implementor'
 
       - name: Get the output information from Assessment Execution
-        run: echo "The time was ${{ steps.oscal-assessment-plan.outputs.time }}"
+        run: |
+          echo "The time was ${{ steps.oscal-assessment-plan.outputs.time }}"
+          echo "The location was ${{ steps.oscal-assessment-plan.outputs.location }}"
