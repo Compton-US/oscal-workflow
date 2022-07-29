@@ -7,6 +7,10 @@ inputs:
     required: true
     default: .oscal/assessment-plan.yaml
 outputs:
+  model:
+    description: 'The oscal assessment plan model.'
+  location:
+    description: 'The file location of assessment.'
   time:
     description: 'The time of assessment.'
 runs:
