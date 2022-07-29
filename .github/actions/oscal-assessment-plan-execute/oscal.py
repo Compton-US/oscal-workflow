@@ -13,7 +13,7 @@ model = os.environ['ASSESSMENT_PLAN']
 def test_the_load():
     """Load a model for interpretation"""
     model_file = Path(os.environ['ASSESSMENT_PLAN']).read_text()
-    model = yaml.load(model_file)
+    model = yaml.safe_load(model_file)
     print(model)
 
 
