@@ -2,7 +2,9 @@
 
 # chmod +x run.sh
 
-model=$1
+
+
+model=$(cat $1)
 echo "::set-output name=model::$model"
 
 time=$(date)
