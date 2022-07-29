@@ -14,12 +14,12 @@ print(model)
 #%%
 content = Path(model).read_text()
 plan = yaml.safe_load(content)
+root_path = "../../../"
 
 #%%
 # print("*"*100)
 # print(model)
 # print(plan)
-
 
 
 # %%
@@ -40,24 +40,19 @@ for task in tasks:
         script = load_script(script_id[1:len(script_id)])
 
         for resource in script['rlinks']:
-            print(resource['href'])
-            script_content = Path(f"../../../script/{resource['href']}").read_text()
+            print("Resource",resource['href'])
+            script_content = Path(f"{root_path}{resource['href']}").read_text()
             script_hash = hashlib.sha256(script_content.encode('utf-8')).hexdigest()
 
             for hash in resource['hashes']:
+                # print("Script:",script_hash,"Expected:",hash['value'])
                 if script_hash == hash['value']:
                     print(f"[ Execute Task ] {task['title']}")
-                    assess_task = subprocess.run(["pytest", f"../../../script/{resource['href']}"])
+                    assess_task = subprocess.run(["python", f"{root_path}{resource['href']}"])
                     print(f"The exit code was: {assess_task.returncode}")
                     print(assess_task.stdout)
-
-
-            
-        
-
-
-
-
+                else:
+                    print(f"The hashes for {root_path}{resource['href']} do not match.")
 
 
 # %%

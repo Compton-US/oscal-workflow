@@ -31,11 +31,11 @@ assessment-plan:
         title: "Execute pytest"
         description: "This is just to test the concept of executing some script or action within the repository."
         rlinks:
-          - href: app_test.py
+          - href: script/app_assessment.py
             media-type: application/x-sh
             hashes:
               - algorithm: sha-256
-                value: 5d235894b9771239ff94f6087e38082f4bd7eafc92d807d9c8de9241ceaca44e
+                value: b43e7ab788296c6312284ad8c813aae2a1fd7b0da635cf437228f3d66bca68b5
 
       # - uuid: BAAA0002-AAAA-5555-AAAA-AAAAAAAAAAAA
       #   title:
