@@ -34,9 +34,10 @@ jobs:
       #     python app.py
 
       - name: Execute OSCAL Assessment Plan
+        id: oscal-assessment-plan
         uses: ./.github/actions/oscal-assessment-plan-execute
         with:
           who-to-greet: 'OSCAL Implementor'
 
       - name: Get the output information from Assessment Execution
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "The time was ${{ steps.oscal-assessment-plan.outputs.time }}"
