@@ -2,15 +2,15 @@
 name: 'Execute OSCAL Assessment Plan'
 description: 'Executes assessment plan based on an assessment-plan.yaml file'
 inputs:
-  who-to-greet:
-    description: 'Who to greet'
+  oscal-assessment-plan:
+    description: 'The OSCAL assessment plan to execute.'
     required: true
-    default: 'World'
+    default: .oscal/assessment-plan.yaml
 outputs:
   time:
-    description: 'The time we greeted you'
+    description: 'The time of assessment.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.oscal-assessment-plan }}

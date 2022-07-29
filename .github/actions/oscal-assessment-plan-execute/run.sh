@@ -2,11 +2,10 @@
 
 # chmod +x run.sh
 
-echo "Hello $1"
+cat $1
+
 time=$(date)
 echo "::set-output name=time::$time"
 
 location=$(pwd)
 echo "::set-output name=location::$location"
-
-pytest

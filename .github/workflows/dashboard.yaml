@@ -37,7 +37,7 @@ jobs:
         id: oscal-assessment-plan
         uses: ./.github/actions/oscal-assessment-plan-execute
         with:
-          who-to-greet: 'OSCAL Implementor'
+          oscal-assessment-plan: '.oscal/assessment-plan.yaml'
 
       - name: Get the output information from Assessment Execution
         run: |
