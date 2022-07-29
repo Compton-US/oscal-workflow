@@ -43,4 +43,5 @@ jobs:
         run: |
           echo "The time was ${{ steps.oscal-assessment-plan.outputs.time }}"
           echo "The location was ${{ steps.oscal-assessment-plan.outputs.location }}"
+          echo "The file was ${{ steps.oscal-assessment-plan.outputs.model_file }}"
           echo "The model was ${{ steps.oscal-assessment-plan.outputs.model }}"

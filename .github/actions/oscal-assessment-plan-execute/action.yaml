@@ -7,6 +7,8 @@ inputs:
     required: true
     default: .oscal/assessment-plan.yaml
 outputs:
+  model_file:
+    description: 'The oscal assessment plan model file that was used.'
   model:
     description: 'The oscal assessment plan model.'
   location:

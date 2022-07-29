@@ -2,6 +2,9 @@
 
 # chmod +x run.sh
 
+model_file=$1
+echo "::set-output name=model::$model_file"
+
 model=$(cat ${1})
 echo "::set-output name=model::$model"
 
