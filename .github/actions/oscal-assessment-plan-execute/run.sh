@@ -19,4 +19,4 @@ pytest --version
 
 
 export ASSESSMENT_PLAN=$model
-pytest
+pytest /oscal.py
