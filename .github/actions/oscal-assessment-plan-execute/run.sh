@@ -13,3 +13,6 @@ echo "::set-output name=location::$location"
 
 
 cat $model
+
+python --version
+pytest --version
