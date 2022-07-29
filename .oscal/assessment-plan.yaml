@@ -1,0 +1,46 @@
+assessment-plan:
+  uuid: AAAA4321-AAAA-5555-AAAA-AAAAAAAAAAAA
+ 
+  metadata:
+    title: OSCAL Automated Workflow Example
+    last-modified: 2022-07-27T09:00:00.000000-04:00
+    version: 0.0.1
+    oscal-version: 1.0.4
+  
+  import-ssp:
+    href: https://github.com/usnistgov/blossom/blob/Compton-NIST/issue-87-aws-ssp-research/docs/rmf_lifecycle/system-security-plans/blossom_admin_member_adapted.ssp.oscal.yaml
+  
+  reviewed-controls:
+    control-selections:
+      include_controls:
+        - control-id: ac-8
+        # - control-id: ac-6.9
+
+  tasks:
+    - uuid: BBAA0001-AAAA-5555-AAAA-AAAAAAAAAAAA
+      title: Validate Banner Presence from Python Script
+      description: Check system use banner presence.
+      type: action
+      links:
+        - href: "#BAAA0001-AAAA-5555-AAAA-AAAAAAAAAAAA"
+          rel: command
+
+  back-matter:
+    resources:
+      - uuid: BAAA0001-AAAA-5555-AAAA-AAAAAAAAAAAA
+        title: "Execute pytest"
+        description: "This is just to test the concept of executing some script or action within the repository."
+        rlinks:
+          - href: pytest
+            media-type: application/x-sh
+            hashes:
+              - algorithm: sha-256
+                value: 5d235894b9771239ff94f6087e38082f4bd7eafc92d807d9c8de9241ceaca44e
+
+      # - uuid: BAAA0002-AAAA-5555-AAAA-AAAAAAAAAAAA
+      #   title:
+      #   description:
+      #   base64:
+      #     - filename:
+      #       media-type:
+      #       value:

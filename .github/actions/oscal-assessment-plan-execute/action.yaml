@@ -1,0 +1,16 @@
+# action.yml
+name: 'Execute OSCAL Assessment Plan'
+description: 'Executes assessment plan based on an assessment-plan.yaml file'
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time:
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
