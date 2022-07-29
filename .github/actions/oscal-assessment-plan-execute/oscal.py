@@ -1,4 +1,5 @@
 import os, yaml
+from pathlib import Path
 from yaml import load
 
 
@@ -11,7 +12,8 @@ model = os.environ['ASSESSMENT_PLAN']
 
 def test_the_load():
     """Load a model for interpretation"""
-    model = yaml.load(os.environ['ASSESSMENT_PLAN'])
+    model_file = Path(os.environ['ASSESSMENT_PLAN']).read_text()
+    model = yaml.load(model_file)
     print(model)
 
 
