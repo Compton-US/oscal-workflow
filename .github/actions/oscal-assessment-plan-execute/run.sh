@@ -17,7 +17,6 @@ cat $model
 python --version
 pytest --version
 
-
 export ASSESSMENT_PLAN=$model
 pytest /oscal_test.py
 python /oscal.py
