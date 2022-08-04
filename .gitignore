@@ -1,3 +1,4 @@
 *.pyc
 __pycache__
-.$Assessment Dataflow.drawio.bkp
+*.drawio.bkp
+.pytest_cache/

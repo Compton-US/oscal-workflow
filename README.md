@@ -4,14 +4,14 @@ Test a concept of the workflow of OSCAL using Python.
 
 ## Concept
 
-![Concept Diagram](Concept.png)
+![Concept Diagram](diagrams/Concept.png)
 
 ## Sequence
 
-![Sequence Diagram](Sequence.png)
+![Sequence Diagram](diagrams/Sequence.png)
 ## Data Flow
 
-![Assessment Data Flow Diagram](Assessment_Dataflow.png)
+![Assessment Data Flow Diagram](diagrams/Dataflow.png)
 
 ## Technologies
 

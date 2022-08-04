@@ -3,7 +3,7 @@ import os, yaml, hashlib, subprocess
 from pathlib import Path
 from yaml import load
 
-root_path = "../../../"
+root_path = ""
 
 if 'ASSESSMENT_PLAN' not in os.environ:
     model = f"{root_path}.oscal/assessment-plan.yaml"
@@ -34,16 +34,18 @@ for task in tasks:
 
         for resource in script['rlinks']:
             print("Resource",resource['href'])
-            script_content = Path(f"{root_path}{resource['href']}").read_text()
+
+            script_path = f"{root_path}{resource['href']}"
+            script_content = Path(script_path).read_text()
             script_hash = hashlib.sha256(script_content.encode('utf-8')).hexdigest()
 
             for hash in resource['hashes']:
                 if script_hash == hash['value']:
                     print(f"[ Execute Task ] {task['title']}")
-                    assess_task = subprocess.run(["python", f"{root_path}{resource['href']}"])
+                    assess_task = subprocess.run(["python", script_path])
                     print(f"The exit code was: {assess_task.returncode}")
                     print(assess_task.stdout)
                 else:
-                    print(f"The hashes for {root_path}{resource['href']} do not match.")
+                    print(f"The hashes for {script_path} do not match.")
 
 # %%
