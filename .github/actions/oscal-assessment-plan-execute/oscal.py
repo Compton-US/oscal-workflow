@@ -46,6 +46,6 @@ for task in tasks:
                     print(f"The exit code was: {assess_task.returncode}")
                     print(assess_task.stdout)
                 else:
-                    print(f"The hashes for {script_path} do not match.")
+                    raise RuntimeError(f"The hashes for {script_path} do not match.")
 
 # %%
