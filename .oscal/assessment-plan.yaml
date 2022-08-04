@@ -35,7 +35,7 @@ assessment-plan:
             media-type: application/x-sh
             hashes:
               - algorithm: sha-256
-                value: b43e7ab788296c6312284ad8c813aae2a1fd7b0da635cf437228f3d66bca68b5
+                value: c804f731552cce89bbe31fe5568d19f344b211ea45db031797b61a39f4afed79
 
       # - uuid: BAAA0002-AAAA-5555-AAAA-AAAAAAAAAAAA
       #   title:
