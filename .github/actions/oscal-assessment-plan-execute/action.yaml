@@ -1,11 +1,11 @@
 # action.yml
 name: 'Execute OSCAL Assessment Plan'
-description: 'Executes assessment plan based on an assessment-plan.yaml file'
+description: 'Executes assessment plan based on an assessment-plan yaml file'
 inputs:
   oscal-assessment-plan:
     description: 'The OSCAL assessment plan to execute.'
     required: true
-    default: .oscal/assessment-plan.yaml
+    default: .oscal/assessment-plan/sample-plan.yaml
 outputs:
   model:
     description: 'The oscal assessment plan model.'

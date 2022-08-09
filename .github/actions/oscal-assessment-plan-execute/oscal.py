@@ -6,7 +6,7 @@ from yaml import load
 root_path = ""
 
 if 'ASSESSMENT_PLAN' not in os.environ:
-    model = f"{root_path}.oscal/assessment-plan.yaml"
+    model = f"{root_path}.oscal/assessment-plan/sample-plan.yaml"
 else:
     model = os.environ['ASSESSMENT_PLAN']
 
