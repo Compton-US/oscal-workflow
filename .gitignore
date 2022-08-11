@@ -3,3 +3,4 @@ __pycache__
 *.drawio.bkp
 .pytest_cache/
 .vscode/
+.DS_Store
