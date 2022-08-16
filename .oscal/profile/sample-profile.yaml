@@ -15,7 +15,7 @@ profile:
         type: organization
         name: CSD Development
         email-addresses:
-          - AAAA-demo@nist.gov
+          - blossom@nist.gov
         addresses:
           - addr-lines:
               - National Institute of Standards and Technology
