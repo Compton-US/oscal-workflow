@@ -31,7 +31,7 @@ assessment-plan:
         description: "This is just to test the concept of executing some script or action within the repository."
         rlinks:
           - href: script/app_assessment.py
-            media-type: application/x-sh
+            media-type: text/plain
             hashes:
-              - algorithm: sha-256
+              - algorithm: SHA-256
                 value: 2e7de3c29f5ac5bceb0e5ef7a3a0134a6cca49c7135cf8c138f1422fb0fa9cee
