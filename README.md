@@ -4,14 +4,14 @@ Test a concept of the workflow of OSCAL using Python.
 
 ## Concept
 
-![Concept Diagram](diagrams/Concept.png)
+![Concept Diagram](diagrams/Concept.drawio.svg)
 
 ## Sequence
 
-![Sequence Diagram](diagrams/Sequence.png)
+![Sequence Diagram](diagrams/Sequence.drawio.svg)
 ## Data Flow
 
-![Assessment Data Flow Diagram](diagrams/Dataflow.png)
+![Assessment Data Flow Diagram](diagrams/Dataflow.drawio.svg)
 
 ## Technologies
 
@@ -48,3 +48,5 @@ The second action, [.github/actions/oscal-assessment-result-generate](.github/ac
 ### OSCAL Assessment Result (and POAM)
 
 This has not been implemented. (yet)
+
+![Assessment Result Concept](diagrams/Result.drawio.svg)
