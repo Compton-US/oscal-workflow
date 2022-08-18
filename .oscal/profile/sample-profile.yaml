@@ -15,7 +15,7 @@ profile:
         type: organization
         name: CSD Development
         email-addresses:
-          - AAAA-demo@nist.gov
+          - blossom@nist.gov
         addresses:
           - addr-lines:
               - National Institute of Standards and Technology
@@ -33,7 +33,7 @@ profile:
         party-uuids:
           - ##########ID##########
   imports:
-    - href: ../catalog/low-sample.yaml
+    - href: https://raw.githubusercontent.com/usnistgov/oscal-content/bfe9b6eb1793748958aa6f47d4d3805b4b8ba114/nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_catalog.yaml
       include-controls:
         - with-ids:
             - ac-8
