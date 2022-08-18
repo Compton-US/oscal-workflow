@@ -6,7 +6,7 @@ catalog:
     version: 2015-01-22
     oscal-version: 1.0.0
     links:
-      - href: https://raw.githubusercontent.com/usnistgov/oscal-content/bfe9b6eb1793748958aa6f47d4d3805b4b8ba114/nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_catalog.yaml
+      - href: ../profile/sample-profile.yaml
         rel: resolution-source
     roles:
       - id: creator
