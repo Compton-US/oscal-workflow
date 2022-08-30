@@ -8,8 +8,8 @@ system-security-plan:
     version: "0.1"
     oscal-version: 1.0.4
     roles:
-      - id: admin
-        title: Administrator
+      - id: application-admin
+        title: Application Administrator
     parties:
       - uuid: ##########ID##########
         type: person
@@ -19,8 +19,9 @@ system-security-plan:
   
   system-characteristics:
     system-ids:
-      - id: saas_system_iaas_customer
-    system-name: Leveraging SaaS System
+      - id: ##########ID##########
+        identifier-type: http://ietf.org/rfc/rfc4122
+    system-name: OSCAL Workflow Example System
     description: >
       NO CONTENT HERE FOR NOW
     security-sensitivity-level: low
@@ -51,7 +52,7 @@ system-security-plan:
     users:
       - uuid: ##########ID##########
         role-ids:
-          - admin
+          - application-admin
         authorized-privileges:
           - title: Developer
             functions-performed:
@@ -113,15 +114,15 @@ system-security-plan:
                     value: provider
           - statement-id: ac-8_smt.c
             uuid: ##########ID##########
-              by-components:
-                - component-uuid: ##########ID##########
-                  uuid: ##########ID##########
-                  description: >-
-                    This system is not authorized to be publicly accessible.  If any response from the system can be displayed on screen, 
-                    such as a terminal window or web browser, the system use notification will be emitted.
-                  props:
-                    - name: responsibility
-                      value: provider       
+            by-components:
+              - component-uuid: ##########ID##########
+                uuid: ##########ID##########
+                description: >-
+                  This system is not authorized to be publicly accessible.  If any response from the system can be displayed on screen, 
+                  such as a terminal window or web browser, the system use notification will be emitted.
+                props:
+                  - name: responsibility
+                    value: provider
 
 
   back-matter:
