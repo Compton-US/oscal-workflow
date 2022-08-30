@@ -44,7 +44,8 @@ system-security-plan:
       security-objective-integrity: fips-199-low
       security-objective-availability: fips-199-low
     status:
-      state: operational
+      state: under-development
+      remarks: This example system is under development and will never be operational by design.
     authorization-boundary:
       description: This system is for demonstration purposes only.
   
