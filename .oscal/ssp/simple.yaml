@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../schemas/oscal_complete.json
+# yaml-language-server: $schema=https://gist.githubusercontent.com/aj-stein-nist/323a00aab93355cc78c23d2dc6cc894e/raw/64799377a7fbd722219152baed24e510cb865e6b/oscal_complete.json
 
 system-security-plan:
   uuid: ##########ID##########
@@ -76,7 +76,7 @@ system-security-plan:
         set-parameters:
           - param-id: ac-8_prm_1
             values:
-            - >
+            - >-
                 You are accessing a U.S. Government information system, which includes: 1) this computer, 2) this computer network, 
                 3) all Government-furnished computers connected to this network, and 4) all Government-furnished devices and storage 
                 media attached to this network or to a computer on this network. You understand and consent to the following: you 
@@ -91,26 +91,26 @@ system-security-plan:
         statements:
           - statement-id: ac-8_smt.a
             uuid: ##########ID##########
-              by-components:
-                - component-uuid: ##########ID##########
-                  uuid: ##########ID##########
-                  description: >-
-                    The system use notification will be implemented in the following locations before allowing access:
-                      * Server log in
-                      * Application log in
-                  props:
-                    - name: responsibility
-                      value: provider
+            by-components:
+              - component-uuid: 19821111-b352-4ff2-8978-365479971f87
+                uuid: cedc1d30-5336-4bac-a88b-1681eae664a1
+                description: >-
+                  The system use notification will be implemented in the following locations before allowing access:
+                    * Server log in
+                    - Application log in
+                props:
+                  - name: responsibility
+                    value: provider
           - statement-id: ac-8_smt.b
             uuid: ##########ID##########
-              by-components:
-                - component-uuid: ##########ID##########
-                  uuid: ##########ID##########
-                  description: >-
-                    The system use notification will remain visible until the user completes the actions required to attempt to log into the system.
-                  props:
-                    - name: responsibility
-                      value: provider
+            by-components:
+              - component-uuid: ##########ID##########
+                uuid: ##########ID##########
+                description: >-
+                  The system use notification will remain visible until the user completes the actions required to attempt to log into the system.
+                props:
+                  - name: responsibility
+                    value: provider
           - statement-id: ac-8_smt.c
             uuid: ##########ID##########
               by-components:
